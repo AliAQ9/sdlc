@@ -17,7 +17,7 @@ jobs:
           terraform init
 
       - name: Configure workspace
-        working-directory: rds
+        working-directory: asg
         run: |
           terraform workspace new dev || terraform workspace select dev
     
