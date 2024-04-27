@@ -38,5 +38,5 @@ jobs:
         working-directory: vpc
         run: |
           echo "applying"
-          terraform apply -auto-approve
+          terraform destroy -auto-approve
 
