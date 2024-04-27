@@ -1,9 +1,10 @@
 name: deploy asg
 
 on:
-  push:
-    paths:
-      - "asg/**"
+  workflow_run:
+    workflows: ["build ami"]
+    type:
+      - completed
 
 jobs:
   build:
