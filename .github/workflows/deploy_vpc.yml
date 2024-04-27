@@ -3,7 +3,7 @@ name: deploy vpc
 on:
   push:
     paths:
-      - "vpc/"
+      - "vpc/**"
 
 jobs:
   build:
@@ -31,5 +31,5 @@ jobs:
         working-directory: vpc
         run: |
           echo "applying"
-          # terraform apply -auto-approve
+          terraform apply -auto-approve
 
