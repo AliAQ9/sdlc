@@ -1,4 +1,4 @@
-name: Deploy VPC
+name: deploy rds
 
 on:
   push:
