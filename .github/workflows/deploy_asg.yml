@@ -3,7 +3,7 @@ name: deploy asg
 on:
   workflow_run:
     workflows: ["build ami"]
-    type:
+    types:
       - completed
 
 jobs:
